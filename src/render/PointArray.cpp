@@ -212,7 +212,7 @@ bool PointArray::loadText(QString fileName, size_t maxPointCount,
     Imath::V3d p;
     size_t readCount = 0;
     // Read three doubles; "%*[^\n]" discards up to just before end of line
-    while (fscanf(inFile, " %lf %lf %lf%*[^\n]", &p.x, &p.y, &p.z) == 3)
+    while (fscanf(inFile, " %lf%*c%lf%*c%lf%*[^\n]", &p.x, &p.y, &p.z) == 3)
     {
         points.push_back(p);
         ++readCount;

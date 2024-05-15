@@ -73,7 +73,7 @@ int main(int argc, char *argv[])
     int maxPointCount = -1;
     std::string serverName = "default";
     double posX = -DBL_MAX, posY = -DBL_MAX, posZ = -DBL_MAX;
-    double yaw = -DBL_MAX, pitch = -DBL_MAX, roll = -DBL_MAX;
+    double yaw = 90, pitch = 0, roll = 0;
     double rot[9] = {-DBL_MAX,-DBL_MAX,-DBL_MAX,-DBL_MAX,-DBL_MAX,-DBL_MAX,-DBL_MAX,-DBL_MAX,-DBL_MAX}; // Camera rotation matrix
     double viewRadius = -DBL_MAX;
 
