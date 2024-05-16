@@ -36,7 +36,7 @@ View3D::View3D(GeometryCollection* geometries, const QGLFormat& format, QWidget 
     m_explicitCursorPos(false),
     m_cursorPos(0),
     m_prevCursorSnap(0),
-    m_backgroundColor(60, 50, 50),
+    m_backgroundColor(211, 211, 211), //lightgrey
     m_drawBoundingBoxes(false),
     m_drawCursor(true),
     m_drawAxes(true),
