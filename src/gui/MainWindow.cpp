@@ -305,6 +305,7 @@ MainWindow::MainWindow(const QGLFormat& format)
     m_hookManager = new HookManager(this);
 
     readSettings();
+    this->showMaximized();
 }
 
 void MainWindow::startIpcServer(const QString& socketName)
